@@ -1,4 +1,12 @@
 # pr-practice
+Simple site written in view that spits out random PRs for you to review.
+Just click the languages you want and hit the button.
+
+
+# TODOs:
+- create button
+- wire up call to github & env variable
+- create tag pills that will add to the search 
 
 ## Project setup
 ```

@@ -1,14 +1,20 @@
 <template>
- <h2>{{msg}}</h2>
+  <section>
+    <SearchButton searchText="Find a Pull Request" />
+  </section>
 </template>
 
 <script>
+import SearchButton from "../components/SearchButton.vue";
 export default {
-  name: 'HelloWorld',
+  name: "PRSearch",
   props: {
-    msg: String
-  }
-}
+    searchText: String,
+  },
+  components: {
+    SearchButton,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -24,7 +30,5 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
-}
+
 </style>
