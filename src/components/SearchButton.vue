@@ -1,30 +1,36 @@
 <template>
-  <button class="searchButton">{{ searchText }}</button>
+  <button class="searchButton"><h1>{{ searchButtonText }}</h1></button>
 </template>
 
 <script>
 export default {
   name: "SearchButton",
   props: {
-    searchText: String,
+    searchButtonText: String,
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+@import url('../colors.css');
+button, input[type="submit"], input[type="reset"] {
+  border: #000000;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  font-size: 1rem;
+  transition: 1s;
+  border-radius: 40px;
+  border-width: 2px;
+  padding: 0.05rem;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-button {
-  border: none;
+button:hover {
+  background-color: var(--secondary);
+  color: var(--primary-background);
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <SearchButton searchText="Find a Pull Request" />
+    <SearchButton searchButtonText="Find a Pull Request" />
   </section>
 </template>
 
